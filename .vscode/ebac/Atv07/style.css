@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image:url(image01.jpg) ;
+    background-repeat: no-repeat;
+}
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    height: 55vh;
+    width: 65vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+.container h1{
+    font-size: 30px;
+    padding: 0.9em;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #fff;
+}
+.container input, button{
+    width: 250px;
+    height: 40px;
+    margin: 0.9em;
+    border-radius: 5px;
+    color: black;
+}
+.container button{
+    background-color: #77a8e9;
+    cursor: pointer;
+    color: #fff;
+}
+.container button:hover{
+    background-color: #2075e4;
+    
+}
+.mensagem-sucesso{
+    background-color:#77a8e9 ;
+    width: 250px;
+    height: 50px;
+    margin: 0.9em;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+    padding: 0.5em;
+    display: none;
+
+}
+.mensagem-erro{
+    background-color:#6142ce ;
+    width: 250px;
+    height: 50px;
+    margin: 0.9em;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+    padding: 0.5em;
+    display: none;
+}
