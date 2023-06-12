@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 7%;
+    background-color:#ECE5C7 ;
+}
+
+h1{
+    margin: 0.5em;
+    color: #116A7B;
+    text-align: center;
+}
+.input_dados{
+    margin: 0.5em;
+    
+}
+.input_dados input{
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    border-style: none;
+
+}
+.input_dados button{
+    height: 30px;
+    width: 100px;
+    border-radius: 5px;
+    border-style: none;
+    color: #C2DEDC;
+    background-color: #116A7B;
+    cursor: pointer;
+
+}
+.input_dados button:hover{
+    background-color: #0b4955;
+}
+ul li{
+    color:#0b4955 ;
+    font-size: 19px;
+    margin: 8px;
+    max-width: 350px;
+    word-break: break-all;
+    cursor: pointer;
+    
+}
+.aux{
+    text-decoration: line-through;
+}
