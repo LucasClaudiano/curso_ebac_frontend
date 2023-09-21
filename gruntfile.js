@@ -20,7 +20,7 @@ module.exports = function(grunt){
         uglify: {
             target:{
                 files:{
-                    'dist/scriipts/main.min.js': 'src/scripts/main.js'
+                    'dist/scripts/main.min.js': 'src/scripts/main.js'
                 }
             }
         }
@@ -29,7 +29,8 @@ module.exports = function(grunt){
 
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-uglify');
-
+    
+    grunt.registerTask('default', ['less:development']);
     grunt.registerTask('build', ['less:production','uglify']);
 
 }
