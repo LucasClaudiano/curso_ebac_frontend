@@ -1,0 +1,87 @@
+@use './components/animations';
+
+.hero{
+    padding: 5.6vw;
+    min-height: 100vh;
+    background-image: url(../images/mensagens-para-aniversario-de-funcionario-3.jpg);
+    background-size: 100%;
+    background-position: center;
+    color: #fff;
+    font-family: 'Sometype Mono', monospace;
+    
+
+    &::before{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%; 
+        height: 100vh;
+        background-color: #313030;
+        content: '';
+        opacity: .3;
+    }
+
+    &__itens , h1, h3, p{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        &__button{
+            margin-top: 44vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #fff;
+            gap: 15px;
+            background-color: transparent;
+            cursor:auto;
+            text-align: center;
+        }
+    }
+    &__title, &__subtitle, &__text{
+        overflow: hidden;
+        height: 1.3em;
+        padding-bottom: 40px;
+    }
+    
+    .container{
+        position: relative;
+    }
+    
+}
+
+
+#more-arrows {
+    width: 75px;
+    height: 65px;
+    cursor: pointer;
+
+    &:hover {
+    
+        polygon {
+            fill: #FFF;
+            transition: all .2s ease-out;
+
+        &.arrow-bottom {
+            transform: translateY(-18px);
+        }
+
+        &.arrow-top {
+            transform: translateY(18px);
+        }
+        }
+}
+}
+
+polygon {
+    fill: #FFF;
+    transition: all .2s ease-out;
+    
+        &.arrow-middle {
+            opacity: 0.75;
+        }
+
+        &.arrow-top {
+            opacity: 0.5
+        }
+}
